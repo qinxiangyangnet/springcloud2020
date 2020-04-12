@@ -1,22 +1,19 @@
-package com.yueyang.pay;
+package com.yueyang.cloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @program: springcloud2020
  * @description:
  * @author: qinxiangyang
- * @create: 2020-04-11 11:53
+ * @create: 2020-04-12 17:34
  **/
 @SpringBootApplication
-@EnableEurekaClient
 @EnableDiscoveryClient
-public class PayMain8001 {
-
+public class PaymentMain8004 {
     public static void main(String[] args) {
-        SpringApplication.run(PayMain8001.class,args);
+        SpringApplication.run(PaymentMain8004.class,args);
     }
 }

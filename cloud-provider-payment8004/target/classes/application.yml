@@ -1,0 +1,15 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.96.96.200:3306/cloud?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root1234
+  cloud:
+    zookeeper:
+      connect-string: 192.168.124.36:2181
+

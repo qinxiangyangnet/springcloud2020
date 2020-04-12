@@ -1,8 +1,8 @@
 package com.yueyang.order.configuer;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -15,9 +15,10 @@ import org.springframework.web.client.RestTemplate;
 public class ApplicationContextConfig {
 
 
-
+    //@LoadBalanced赋予RestTemplate负载均衡，用于集群的情况
     @Bean
-    public RestTemplate  getRestTemplate(){
+    @LoadBalanced
+    public RestTemplate getRestTemplate() {
         return new RestTemplate();
     }
 }

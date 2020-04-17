@@ -48,10 +48,7 @@ public class PaymentService {
         } catch (Exception e) {
 
         }
-
        // int  age=10/0;
-
-
         return "线程池" + Thread.currentThread().getName() + "paymentInfo_error,id" + id + "\t" + "o(╥﹏╥)o哼哼" + "h耗时："+timeNumber ;
     }
     public String paymentInfo_TimenHandler(Integer id) {

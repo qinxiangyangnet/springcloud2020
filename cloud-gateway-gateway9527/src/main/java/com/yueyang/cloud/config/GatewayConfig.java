@@ -20,6 +20,7 @@ public class GatewayConfig {
         RouteLocatorBuilder.Builder routes = routeLocatorBuilder.routes();
         routes.route("payment_route", r -> r.path("/guonei").uri("http://news.baidu.com")).build();
         routes.route("payment_route", r -> r.path("/guoji").uri("http://news.baidu.com")).build();
+        routes.route("payment_route", r -> r.path("/payment/discovery/**").uri("http://localhost:8001")).build();
         return routes.build();
     }
 

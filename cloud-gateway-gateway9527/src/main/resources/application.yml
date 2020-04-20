@@ -31,3 +31,12 @@ spring:
           uri: lb://cloud-payment-service
           predicates:
             - Path=/payment/lb/**         # 断言，路径相匹配的进行路由
+            #- After=2020-05-20T15:27:25.124+08:00[Asia/Shanghai] #这个时间之后才能访问
+           # - Before=2020-04-20T15:27:25.124+08:00[Asia/Shanghai] #这个时间之后才能访问
+           #- Between=2020-04-20T15:27:25.124+08:00[Asia/Shanghai],2020-04-20T15:27:25.124+08:00[Asia/Shanghai] #这个时间之后才能访问
+           # - Cookie=username,zzyy   #curl http://172.16.10.15:9527/payment/lb --cookie "username=zzyy"
+            - Header=X-Request-Id, \d+ #curl http://172.16.10.15:9527/payment/lb -H  "X-Request-Id:1234"
+           # - Query=username, \d+
+           # - Method=GET
+            #- Host=*.baidu.com
+

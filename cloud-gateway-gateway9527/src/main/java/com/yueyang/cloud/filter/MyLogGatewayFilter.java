@@ -10,6 +10,8 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
+import java.util.HashMap;
+
 /**
  * @program: cloud-consumerconsul-order80
  * @description:
@@ -28,6 +30,7 @@ public class MyLogGatewayFilter implements GlobalFilter, Ordered {
             return exchange.getResponse().setComplete();
         }
         return chain.filter(exchange);
+
     }
 
     @Override

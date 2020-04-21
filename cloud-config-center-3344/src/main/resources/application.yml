@@ -11,8 +11,8 @@ spring:
           ####搜索目录
           search-paths:
             - config-ceshi
-          password: yy@123456
-          username: qinxiangyang
+          password: xxx
+          username: xxx
           force-pull: true
       ####读取分支
       label: master

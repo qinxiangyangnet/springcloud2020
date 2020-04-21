@@ -11,11 +11,16 @@ spring:
           ####搜索目录
           search-paths:
             - config-ceshi
-          password: xxx
-          username: xxx
+          password: yy@123456
+          username: qinxiangyang
           force-pull: true
       ####读取分支
       label: master
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:
@@ -24,3 +29,9 @@ eureka:
     service-url:
       defaultZone: http://127.0.0.1:7001/eureka
       #defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/,http://eureka7003.com:7003/eureka/
+management: #rebbbitmq相关配置 暴露bus刷新配置端点
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
+#curl -X POST "http://localhost:3344/actuator/bus-refresh"

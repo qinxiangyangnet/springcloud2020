@@ -7,10 +7,12 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:qinixiangyang111/SpringcloudConfig.git #github上面git仓库的名字
+          uri: git@github.com:qinixiangyang111/SpringcloudConfig.git #GitHub上面的git仓库名字
+          ####搜索目录
           search-paths:
-            - SpringcloudConfig  #搜索目录
-      label: master #读取分支
+            - SpringcloudConfig
+      ####读取分支
+      label: master
 
 eureka:
   client:

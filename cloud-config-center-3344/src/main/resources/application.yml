@@ -7,10 +7,13 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:qinixiangyang111/SpringcloudConfig.git #GitHub上面的git仓库名字
+          uri: http://10.0.0.210/qinxiangyang/config-ceshi.git #GitHub上面的git仓库名字
           ####搜索目录
           search-paths:
-            - SpringcloudConfig
+            - config-ceshi
+          password:
+          username:
+          force-pull: true
       ####读取分支
       label: master
 

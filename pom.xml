@@ -35,6 +35,7 @@
         <module>cloud-stream-rabbitmq-consumer8002</module>
         <module>cloud-stream-rabbitmq-consumer8003</module>
         <module>cloud-nacos-provider9001</module>
+        <module>cloud-nacos-config-client3377</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->

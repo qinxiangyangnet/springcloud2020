@@ -29,6 +29,7 @@
         <module name="cloud-stream-rabbitmq-provider8001" />
         <module name="cloud-nacos-provider9001" />
         <module name="cloud-config-client-3355" />
+        <module name="cloud-nacos-config-client3377" />
         <module name="cloud-gateway-gateway9527" />
         <module name="cloud-consumer-hystrix-dashboard9001" />
         <module name="cloud-stream-rabbitmq-consumer8003" />

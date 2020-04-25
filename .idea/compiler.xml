@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-consumer-order80" />
         <module name="cloud-consumerZk-order80" />
+        <module name="cloud-nacos-consumser83" />
         <module name="cloud-provider-hystrix-payment8001" />
         <module name="cloud-config-center-3344" />
         <module name="cloud-eureka-server7003" />
@@ -22,15 +23,17 @@
         <module name="cloud-provider-payment8001" />
         <module name="cloud-test-code" />
         <module name="cloud-consumer-feign-hystrix-order80" />
+        <module name="cloud-consumer-feign-order80" />
+        <module name="cloud-nacos-provider9002" />
+        <module name="untitled" />
         <module name="cloud-stream-rabbitmq-provider8001" />
-        <module name="cloud-stream-rabbitmq-consumer8002" />
+        <module name="cloud-nacos-provider9001" />
         <module name="cloud-config-client-3355" />
-        <module name="cloud-stream-rabbitmq-consumer8003" />
         <module name="cloud-gateway-gateway9527" />
         <module name="cloud-consumer-hystrix-dashboard9001" />
-        <module name="cloud-consumer-feign-order80" />
+        <module name="cloud-stream-rabbitmq-consumer8003" />
         <module name="cloud-config-client-3366" />
-        <module name="untitled" />
+        <module name="cloud-stream-rabbitmq-consumer8002" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

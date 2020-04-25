@@ -34,6 +34,7 @@
         <module>cloud-stream-rabbitmq-provider8001</module>
         <module>cloud-stream-rabbitmq-consumer8002</module>
         <module>cloud-stream-rabbitmq-consumer8003</module>
+        <module>cloud-nacos-provider9001</module>
     </modules>
 
     <!-- 统一管理jar包版本 -->
@@ -76,6 +77,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>

@@ -10,4 +10,5 @@ spring:
       config:
         server-addr: 127.0.0.1:8848   #配置中心
         file-extension: yaml   #置顶yml格式配置
-        group: DEV_GROUP
+        #group: DEV_GROUP
+        namespace: 16c35615-2d81-45dd-840c-0a90f5118e3b

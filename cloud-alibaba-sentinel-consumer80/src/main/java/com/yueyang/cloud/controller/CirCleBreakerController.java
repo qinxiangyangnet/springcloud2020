@@ -2,6 +2,7 @@ package com.yueyang.cloud.controller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
+import com.yueyang.cloud.service.PaymentService;
 import com.yueyang.springcloud.entities.CommonResult;
 import com.yueyang.springcloud.entities.Payment;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,6 +67,16 @@ public class CirCleBreakerController {
     public CommonResult blockHandler_sentinel(Long id, BlockException t) {
         Payment payment = new Payment(id, null);
         return new CommonResult(445, "限流无此流水，blockHandler" + t.getMessage(), payment);
+    }
+    //openFiegn
+
+    @Autowired
+    private PaymentService paymentService;
+
+
+    @RequestMapping("consumer/paymentSql/{id}")
+    public CommonResult<Payment> paymentSql(@PathVariable(value = "id") Long id) {
+        return paymentService.getPayment(id);
     }
 
 }

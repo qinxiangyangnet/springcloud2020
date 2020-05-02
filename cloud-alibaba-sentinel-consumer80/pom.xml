@@ -17,6 +17,11 @@
             <artifactId>cloud-api-commons</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <!--Spring  cloud openfeign-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
         <!--SpringCloud ailibaba nacos -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>

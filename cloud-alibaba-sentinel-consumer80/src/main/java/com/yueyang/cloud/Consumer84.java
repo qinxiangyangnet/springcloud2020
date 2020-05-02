@@ -12,7 +12,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  **/
 
 @SpringBootApplication
-
 @EnableDiscoveryClient
 public class Consumer84 {
     public static void main(String[] args) {

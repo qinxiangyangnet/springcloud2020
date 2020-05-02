@@ -36,7 +36,7 @@ public class CirCleBreakerController {
     @RequestMapping("consumer/fallback/{id}")
     // @SentinelResource(value = "fallback", fallback = "handlerFallBack")
     // @SentinelResource(value = "fallback", blockHandler = "blockHandler_sentinel")
-    @SentinelResource(value = "fallback", blockHandler = "blockHandler_sentinel", fallback = "handlerFallBack", exceptionsToIgnore = {IllegalArgumentException.class})
+   // @SentinelResource(value = "fallback", blockHandler = "blockHandler_sentinel", fallback = "handlerFallBack", exceptionsToIgnore = {IllegalArgumentException.class})
     public CommonResult<Payment> fallback(@PathVariable(value = "id") Long id) {
 
         if (id == 4) {
@@ -79,4 +79,11 @@ public class CirCleBreakerController {
         return paymentService.getPayment(id);
     }
 
+
+    @GetMapping(value = "/rateLimit/byUrl")
+    @SentinelResource(value = "byUrl")
+    public CommonResult byUrl() {
+
+        return new CommonResult(200, "\t 按照url限流ojbk", new Payment(2020L, "serial002"));
+    }
 }

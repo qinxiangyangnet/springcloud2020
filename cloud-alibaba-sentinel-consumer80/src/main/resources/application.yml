@@ -10,6 +10,15 @@ spring:
       transport:
         dashboard: 127.0.0.1:7003
         port: 8719
+      datasource:
+        ds1:
+          nacos:
+            server-addr: 127.0.0.1:8848
+            dataId: nacos-service-consumer
+            groupId:  DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+
   application:
     name: nacos-service-consumer
 

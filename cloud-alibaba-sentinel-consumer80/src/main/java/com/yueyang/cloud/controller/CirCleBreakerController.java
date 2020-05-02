@@ -48,7 +48,7 @@ public class CirCleBreakerController {
     }
 
     /**
-     * fallback  负责义务异常
+     * fallback  负责业务异常
      * @param id
      * @param t
      * @return
